@@ -1,7 +1,7 @@
 const path = require("path");
 
 const { transformSync } = require("esbuild");
-const babelJest = require("babel-jest").default;
+const babelJest = require("babel-jest").default.createTransformer();
 
 const loaders = ["js", "jsx", "ts", "tsx"];
 const nodeVersion =
